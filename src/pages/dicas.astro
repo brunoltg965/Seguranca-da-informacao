@@ -1,0 +1,820 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Dicas e Tendências - Segurança da Informação">
+	<Header />
+	
+	<main style="margin-top: 80px;">
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero-title">Dicas & Tendências</h1>
+				<p class="hero-subtitle">
+					Mantenha-se atualizado com as últimas tendências, certificações importantes 
+					e dicas valiosas para construir uma carreira sólida em Segurança da Informação.
+				</p>
+			</div>
+		</section>
+
+		<!-- Certifications Section -->
+		<section class="section certifications">
+			<div class="container">
+				<h2 class="section-title">Certificações Importantes</h2>
+				<p class="section-subtitle">
+					Certificações reconhecidas mundialmente que podem impulsionar sua carreira
+				</p>
+				
+				<div class="certs-grid">
+					<div class="cert-card level-entry">
+						<div class="cert-header">
+							<div class="cert-level">Nível Iniciante</div>
+							<div class="cert-icon">🚀</div>
+						</div>
+						<div class="cert-item">
+							<h3>CompTIA Security+</h3>
+							<p>Certificação fundamental cobrindo conceitos básicos de segurança, ideal para iniciar na área.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $370</span>
+								<span class="cert-validity">Validade: 3 anos</span>
+							</div>
+						</div>
+						<div class="cert-item">
+							<h3>GIAC Security Essentials (GSEC)</h3>
+							<p>Certificação abrangente para profissionais que trabalham com segurança de sistemas.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $2.500+</span>
+								<span class="cert-validity">Validade: 4 anos</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cert-card level-intermediate">
+						<div class="cert-header">
+							<div class="cert-level">Nível Intermediário</div>
+							<div class="cert-icon">📊</div>
+						</div>
+						<div class="cert-item">
+							<h3>CISSP</h3>
+							<p>Certificação gold standard para profissionais seniores em segurança da informação.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $749</span>
+								<span class="cert-validity">Validade: 3 anos</span>
+							</div>
+						</div>
+						<div class="cert-item">
+							<h3>CEH (Certified Ethical Hacker)</h3>
+							<p>Focada em ethical hacking e testes de penetração para identificar vulnerabilidades.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $1.199</span>
+								<span class="cert-validity">Validade: 3 anos</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="cert-card level-advanced">
+						<div class="cert-header">
+							<div class="cert-level">Nível Avançado</div>
+							<div class="cert-icon">👑</div>
+						</div>
+						<div class="cert-item">
+							<h3>OSCP</h3>
+							<p>Certificação hands-on extremamente respeitada em penetration testing e exploração.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $1.499</span>
+								<span class="cert-validity">Validade: Permanente</span>
+							</div>
+						</div>
+						<div class="cert-item">
+							<h3>CISM</h3>
+							<p>Para profissionais que gerenciam, projetam e supervisionam sistemas de segurança.</p>
+							<div class="cert-details">
+								<span class="cert-cost">Custo: $760</span>
+								<span class="cert-validity">Validade: 3 anos</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Trends Section -->
+		<section class="section trends">
+			<div class="container">
+				<h2 class="section-title">Tendências Emergentes</h2>
+				<div class="trends-grid">
+					<div class="trend-card">
+						<div class="trend-icon">🤖</div>
+						<h3>IA e Machine Learning em Segurança</h3>
+						<p>
+							Uso de inteligência artificial para detecção avançada de ameaças, 
+							análise comportamental e resposta automatizada a incidentes.
+						</p>
+						<div class="trend-impact">Impacto: <span class="high">Alto</span></div>
+					</div>
+					
+					<div class="trend-card">
+						<div class="trend-icon">☁️</div>
+						<h3>Segurança em Cloud Native</h3>
+						<p>
+							Proteção de aplicações containerizadas, microserviços e 
+							infraestruturas cloud-native com abordagens DevSecOps.
+						</p>
+						<div class="trend-impact">Impacto: <span class="high">Alto</span></div>
+					</div>
+					
+					<div class="trend-card">
+						<div class="trend-icon">🔗</div>
+						<h3>Zero Trust Architecture</h3>
+						<p>
+							Modelo de segurança que não confia automaticamente em nada, 
+							verificando continuamente usuários e dispositivos.
+						</p>
+						<div class="trend-impact">Impacto: <span class="medium">Médio</span></div>
+					</div>
+					
+					<div class="trend-card">
+						<div class="trend-icon">📱</div>
+						<h3>Segurança IoT</h3>
+						<p>
+							Proteção de dispositivos Internet of Things e redes de 
+							sensores em ambientes industriais e residenciais.
+						</p>
+						<div class="trend-impact">Impacto: <span class="medium">Médio</span></div>
+					</div>
+					
+					<div class="trend-card">
+						<div class="trend-icon">🔐</div>
+						<h3>Criptografia Pós-Quântica</h3>
+						<p>
+							Desenvolvimento de algoritmos criptográficos resistentes 
+							a ataques de computadores quânticos.
+						</p>
+						<div class="trend-impact">Impacto: <span class="low">Emergente</span></div>
+					</div>
+					
+					<div class="trend-card">
+						<div class="trend-icon">👥</div>
+						<h3>Security Awareness</h3>
+						<p>
+							Foco crescente em educação e conscientização dos usuários 
+							como primeira linha de defesa.
+						</p>
+						<div class="trend-impact">Impacto: <span class="high">Alto</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tips Section -->
+		<section class="section tips">
+			<div class="container">
+				<h2 class="section-title">Dicas para Carreira</h2>
+				<div class="tips-container">
+					<div class="tips-category">
+						<h3>📚 Aprendizado Contínuo</h3>
+						<div class="tip-list">
+							<div class="tip-item">
+								<div class="tip-icon">💡</div>
+								<div class="tip-content">
+									<h4>Mantenha-se Atualizado</h4>
+									<p>Siga blogs especializados, participe de conferências e faça cursos regularmente.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">🧪</div>
+								<div class="tip-content">
+									<h4>Pratique em Labs</h4>
+									<p>Use plataformas como HackTheBox, TryHackMe e OverTheWire para praticar.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">📖</div>
+								<div class="tip-content">
+									<h4>Leia Documentação</h4>
+									<p>Estude manuais técnicos, RFCs e documentação oficial de ferramentas.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="tips-category">
+						<h3>🤝 Network e Comunidade</h3>
+						<div class="tip-list">
+							<div class="tip-item">
+								<div class="tip-icon">👥</div>
+								<div class="tip-content">
+									<h4>Participe de Comunidades</h4>
+									<p>Engaje-se em fóruns, grupos do LinkedIn e comunidades locais de segurança.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">🎤</div>
+								<div class="tip-content">
+									<h4>Compartilhe Conhecimento</h4>
+									<p>Escreva artigos, faça apresentações e contribua com projetos open source.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">🏆</div>
+								<div class="tip-content">
+									<h4>Participe de CTFs</h4>
+									<p>Capture The Flag competitions ajudam a desenvolver habilidades práticas.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="tips-category">
+						<h3>💼 Desenvolvimento Profissional</h3>
+						<div class="tip-list">
+							<div class="tip-item">
+								<div class="tip-icon">📋</div>
+								<div class="tip-content">
+									<h4>Construa um Portfólio</h4>
+									<p>Documente projetos, estudos de caso e contribuições para mostrar suas habilidades.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">🎯</div>
+								<div class="tip-content">
+									<h4>Especialize-se Gradualmente</h4>
+									<p>Comece com conhecimento amplo e gradualmente foque em uma área específica.</p>
+								</div>
+							</div>
+							<div class="tip-item">
+								<div class="tip-icon">📈</div>
+								<div class="tip-content">
+									<h4>Entenda o Business</h4>
+									<p>Aprenda como a segurança impacta os negócios e comunique-se em termos empresariais.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resources Section -->
+		<section class="section resources">
+			<div class="container">
+				<h2 class="section-title">Recursos Recomendados</h2>
+				<div class="resources-grid">
+					<div class="resource-card">
+						<div class="resource-header">
+							<h3>📚 Livros Essenciais</h3>
+							<div class="resource-icon">📖</div>
+						</div>
+						<ul class="resource-list">
+							<li>"The Web Application Hacker's Handbook" - Dafydd Stuttard</li>
+							<li>"Practical Malware Analysis" - Michael Sikorski</li>
+							<li>"The Phoenix Project" - Gene Kim</li>
+							<li>"Cybersecurity and Cyberwar" - P.W. Singer</li>
+							<li>"Applied Cryptography" - Bruce Schneier</li>
+						</ul>
+					</div>
+					
+					<div class="resource-card">
+						<div class="resource-header">
+							<h3>🔧 Ferramentas Importantes</h3>
+							<div class="resource-icon">⚙️</div>
+						</div>
+						<ul class="resource-list">
+							<li>Nmap - Network scanning e discovery</li>
+							<li>Wireshark - Análise de tráfego de rede</li>
+							<li>Metasploit - Framework de penetration testing</li>
+							<li>Burp Suite - Teste de aplicações web</li>
+							<li>OSSEC - Sistema de detecção de intrusão</li>
+						</ul>
+					</div>
+					
+					<div class="resource-card">
+						<div class="resource-header">
+							<h3>🎓 Plataformas de Aprendizado</h3>
+							<div class="resource-icon">🖥️</div>
+						</div>
+						<ul class="resource-list">
+							<li>Cybrary - Cursos gratuitos de segurança</li>
+							<li>SANS Institute - Treinamentos avançados</li>
+							<li>Coursera/edX - Cursos universitários online</li>
+							<li>Pluralsight - Vídeos técnicos especializados</li>
+							<li>Linux Academy - Foco em infraestrutura</li>
+						</ul>
+					</div>
+					
+					<div class="resource-card">
+						<div class="resource-header">
+							<h3>🏃‍♂️ Labs Práticos</h3>
+							<div class="resource-icon">🧪</div>
+						</div>
+						<ul class="resource-list">
+							<li>HackTheBox - Máquinas vulneráveis reais</li>
+							<li>TryHackMe - Aprendizado gamificado</li>
+							<li>VulnHub - VMs vulneráveis para download</li>
+							<li>OverTheWire - Wargames e challenges</li>
+							<li>PentesterLab - Foco em web application security</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Market Insights -->
+		<section class="section market">
+			<div class="container">
+				<h2 class="section-title">Panorama do Mercado</h2>
+				<div class="market-stats">
+					<div class="stat-card">
+						<div class="stat-number">$173B</div>
+						<div class="stat-label">Mercado Global de Cybersecurity em 2025</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">3.5M</div>
+						<div class="stat-label">Posições em Aberto Globalmente</div>
+					</div>
+					<div class="stat-card">
+						<div class="stat-number">13%</div>
+						<div class="stat-label">Crescimento Anual Projetado</div>
+					</div>
+				</div>
+				
+				<div class="market-insights">
+					<div class="insight-card">
+						<h3>Setores em Destaque</h3>
+						<div class="sectors">
+							<div class="sector-item">
+								<span class="sector-name">Saúde</span>
+								<div class="sector-bar">
+									<div class="sector-progress" style="width: 85%"></div>
+								</div>
+							</div>
+							<div class="sector-item">
+								<span class="sector-name">Fintech</span>
+								<div class="sector-bar">
+									<div class="sector-progress" style="width: 92%"></div>
+								</div>
+							</div>
+							<div class="sector-item">
+								<span class="sector-name">E-commerce</span>
+								<div class="sector-bar">
+									<div class="sector-progress" style="width: 78%"></div>
+								</div>
+							</div>
+							<div class="sector-item">
+								<span class="sector-name">Governo</span>
+								<div class="sector-bar">
+									<div class="sector-progress" style="width: 88%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="insight-card">
+						<h3>Habilidades Mais Procuradas</h3>
+						<div class="skills-demand">
+							<span class="skill-badge high">Cloud Security</span>
+							<span class="skill-badge high">DevSecOps</span>
+							<span class="skill-badge medium">AI/ML Security</span>
+							<span class="skill-badge high">Incident Response</span>
+							<span class="skill-badge medium">Threat Intelligence</span>
+							<span class="skill-badge high">Zero Trust</span>
+							<span class="skill-badge medium">Compliance</span>
+							<span class="skill-badge high">Penetration Testing</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, #059669 0%, #047857 100%);
+		color: white;
+		padding: 120px 0 80px;
+		text-align: center;
+	}
+
+	.hero-title {
+		font-size: 3rem;
+		font-weight: 800;
+		margin-bottom: 24px;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: #d1fae5;
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.certifications {
+		background: white;
+	}
+
+	.certs-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 32px;
+	}
+
+	.cert-card {
+		border-radius: 16px;
+		padding: 32px;
+		border: 2px solid;
+		transition: all 0.3s ease;
+	}
+
+	.cert-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.level-entry {
+		border-color: #22c55e;
+		background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+	}
+
+	.level-intermediate {
+		border-color: #f59e0b;
+		background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+	}
+
+	.level-advanced {
+		border-color: #dc2626;
+		background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+	}
+
+	.cert-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 24px;
+	}
+
+	.cert-level {
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.cert-icon {
+		font-size: 2rem;
+	}
+
+	.cert-item {
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.cert-item:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.cert-item h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin-bottom: 8px;
+		color: #1e293b;
+	}
+
+	.cert-item p {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 12px;
+	}
+
+	.cert-details {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.cert-cost,
+	.cert-validity {
+		background: rgba(255, 255, 255, 0.7);
+		padding: 4px 12px;
+		border-radius: 12px;
+		font-size: 0.85rem;
+		font-weight: 500;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.trends {
+		background: #f8fafc;
+	}
+
+	.trends-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 32px;
+	}
+
+	.trend-card {
+		background: white;
+		border-radius: 16px;
+		padding: 32px;
+		border: 1px solid #e2e8f0;
+		transition: all 0.3s ease;
+		text-align: center;
+	}
+
+	.trend-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+		border-color: #2563eb;
+	}
+
+	.trend-icon {
+		font-size: 3rem;
+		margin-bottom: 16px;
+	}
+
+	.trend-card h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin-bottom: 16px;
+		color: #1e293b;
+	}
+
+	.trend-card p {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 16px;
+	}
+
+	.trend-impact {
+		font-weight: 500;
+		color: #374151;
+	}
+
+	.trend-impact .high {
+		color: #dc2626;
+		font-weight: 600;
+	}
+
+	.trend-impact .medium {
+		color: #f59e0b;
+		font-weight: 600;
+	}
+
+	.trend-impact .low {
+		color: #059669;
+		font-weight: 600;
+	}
+
+	.tips {
+		background: white;
+	}
+
+	.tips-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 48px;
+	}
+
+	.tips-category h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 24px;
+		color: #1e293b;
+	}
+
+	.tip-item {
+		display: flex;
+		gap: 16px;
+		margin-bottom: 24px;
+		padding: 20px;
+		border-radius: 12px;
+		border: 1px solid #f1f5f9;
+		transition: all 0.3s ease;
+	}
+
+	.tip-item:hover {
+		border-color: #e2e8f0;
+		background: #f8fafc;
+	}
+
+	.tip-icon {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+		margin-top: 4px;
+	}
+
+	.tip-content h4 {
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-bottom: 8px;
+		color: #1e293b;
+	}
+
+	.tip-content p {
+		color: #4b5563;
+		line-height: 1.5;
+		font-size: 0.95rem;
+	}
+
+	.resources {
+		background: #f8fafc;
+	}
+
+	.resources-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 32px;
+	}
+
+	.resource-card {
+		background: white;
+		border-radius: 16px;
+		padding: 32px;
+		border: 1px solid #e2e8f0;
+		transition: all 0.3s ease;
+	}
+
+	.resource-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	}
+
+	.resource-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 24px;
+	}
+
+	.resource-header h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+		color: #1e293b;
+	}
+
+	.resource-icon {
+		font-size: 2rem;
+	}
+
+	.resource-list {
+		list-style: none;
+	}
+
+	.resource-list li {
+		padding: 8px 0;
+		color: #4b5563;
+		position: relative;
+		padding-left: 20px;
+		line-height: 1.5;
+	}
+
+	.resource-list li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: #059669;
+		font-weight: 600;
+	}
+
+	.market {
+		background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+		color: white;
+	}
+
+	.market .section-title {
+		color: white;
+	}
+
+	.market-stats {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 32px;
+		margin-bottom: 64px;
+	}
+
+	.stat-card {
+		text-align: center;
+		padding: 32px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+	}
+
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 800;
+		background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		margin-bottom: 8px;
+	}
+
+	.stat-label {
+		font-size: 1.1rem;
+		color: #94a3b8;
+	}
+
+	.market-insights {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 48px;
+	}
+
+	.insight-card {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 16px;
+		padding: 32px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+	}
+
+	.insight-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
+
+	.sector-item {
+		margin-bottom: 16px;
+	}
+
+	.sector-name {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: 500;
+	}
+
+	.sector-bar {
+		width: 100%;
+		height: 8px;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.sector-progress {
+		height: 100%;
+		background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+		border-radius: 4px;
+		transition: width 1s ease;
+	}
+
+	.skills-demand {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.skill-badge {
+		padding: 8px 16px;
+		border-radius: 20px;
+		font-size: 0.9rem;
+		font-weight: 500;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.skill-badge.high {
+		background: rgba(220, 38, 38, 0.2);
+		color: #fca5a5;
+		border-color: #dc2626;
+	}
+
+	.skill-badge.medium {
+		background: rgba(245, 158, 11, 0.2);
+		color: #fcd34d;
+		border-color: #f59e0b;
+	}
+
+	@media (max-width: 768px) {
+		.hero-title {
+			font-size: 2.5rem;
+		}
+		
+		.certs-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.tips-container {
+			grid-template-columns: 1fr;
+			gap: 32px;
+		}
+		
+		.market-insights {
+			grid-template-columns: 1fr;
+			gap: 32px;
+		}
+		
+		.market-stats {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+</Layout>

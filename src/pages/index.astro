@@ -1,0 +1,412 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="CyberSec Pro - Carreira em Segurança da Informação">
+	<Header />
+	
+	<main style="margin-top: 80px;">
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="hero-title">
+							Segurança da <span class="gradient-text">Informação</span>
+						</h1>
+						<p class="hero-description">
+							Descubra uma das carreiras mais promissoras e estratégicas da tecnologia. 
+							Proteja dados, sistemas e organizações contra ameaças cibernéticas em constante evolução.
+						</p>
+						<div class="hero-buttons">
+							<a href="/sobre" class="btn btn-primary">
+								Conheça a Profissão
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="m9 18 6-6-6-6"/>
+								</svg>
+							</a>
+							<a href="/dicas" class="btn btn-secondary">
+								Ver Tendências
+							</a>
+						</div>
+					</div>
+					<div class="hero-visual">
+						<div class="cyber-shield">
+							<div class="shield-layers">
+								<div class="shield-layer layer-1"></div>
+								<div class="shield-layer layer-2"></div>
+								<div class="shield-layer layer-3"></div>
+							</div>
+							<div class="shield-icon">🛡️</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="section features">
+			<div class="container">
+				<h2 class="section-title">Por que Segurança da Informação?</h2>
+				<p class="section-subtitle">
+					Uma área essencial para o futuro digital das organizações
+				</p>
+				
+				<div class="features-grid">
+					<div class="feature-card">
+						<div class="feature-icon">📈</div>
+						<h3>Mercado em Crescimento</h3>
+						<p>Demanda crescente por profissionais qualificados, com salários competitivos e oportunidades globais.</p>
+					</div>
+					
+					<div class="feature-card">
+						<div class="feature-icon">🎯</div>
+						<h3>Impacto Estratégico</h3>
+						<p>Trabalhe em projetos que protegem organizações e pessoas contra ameaças digitais críticas.</p>
+					</div>
+					
+					<div class="feature-card">
+						<div class="feature-icon">🚀</div>
+						<h3>Inovação Constante</h3>
+						<p>Área em constante evolução com novas tecnologias, desafios e soluções inovadoras.</p>
+					</div>
+					
+					<div class="feature-card">
+						<div class="feature-icon">🌍</div>
+						<h3>Relevância Global</h3>
+						<p>Contribua para os Objetivos de Desenvolvimento Sustentável através da segurança digital.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Statistics Section -->
+		<section class="section stats">
+			<div class="container">
+				<div class="stats-grid">
+					<div class="stat-item">
+						<div class="stat-number">3.5M</div>
+						<div class="stat-label">Vagas em Aberto</div>
+						<div class="stat-description">Posições não preenchidas globalmente</div>
+					</div>
+					
+					<div class="stat-item">
+						<div class="stat-number">+28%</div>
+						<div class="stat-label">Crescimento Anual</div>
+						<div class="stat-description">Projeção de crescimento até 2028</div>
+					</div>
+					
+					<div class="stat-item">
+						<div class="stat-number">R$ 8.5k</div>
+						<div class="stat-label">Salário Médio</div>
+						<div class="stat-description">Para profissionais no Brasil</div>
+					</div>
+					
+					<div class="stat-item">
+						<div class="stat-number">24/7</div>
+						<div class="stat-label">Proteção Contínua</div>
+						<div class="stat-description">Monitoramento e resposta constantes</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Quick Links Section -->
+		<section class="section quick-links">
+			<div class="container">
+				<h2 class="section-title">Explore Mais</h2>
+				<div class="links-grid">
+					<a href="/sobre" class="link-card">
+						<div class="link-icon">👨‍💼</div>
+						<h3>Sobre a Profissão</h3>
+						<p>Entenda as responsabilidades, áreas de atuação e perfil profissional necessário.</p>
+					</a>
+					
+					<a href="/dicas" class="link-card">
+						<div class="link-icon">💡</div>
+						<h3>Dicas & Tendências</h3>
+						<p>Certificações importantes, tecnologias emergentes e dicas de carreira.</p>
+					</a>
+					
+					<a href="/contatos" class="link-card">
+						<div class="link-icon">🤝</div>
+						<h3>Nossa Equipe</h3>
+						<p>Conheça os perfis profissionais e conecte-se com nossa equipe.</p>
+					</a>
+					
+					<a href="/ods" class="link-card">
+						<div class="link-icon">🌱</div>
+						<h3>Impacto Social</h3>
+						<p>Como a segurança da informação contribui para os ODS da ONU.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+		padding: 120px 0;
+		overflow: hidden;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px;
+		align-items: center;
+	}
+
+	.hero-title {
+		font-size: 3.5rem;
+		font-weight: 800;
+		line-height: 1.1;
+		margin-bottom: 24px;
+		color: #1e293b;
+	}
+
+	.gradient-text {
+		background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-description {
+		font-size: 1.25rem;
+		color: #64748b;
+		margin-bottom: 32px;
+		line-height: 1.7;
+	}
+
+	.hero-buttons {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	.hero-visual {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.cyber-shield {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.shield-layers {
+		position: absolute;
+		inset: 0;
+	}
+
+	.shield-layer {
+		position: absolute;
+		border: 2px solid;
+		border-radius: 50%;
+		animation: rotate 20s linear infinite;
+	}
+
+	.layer-1 {
+		width: 100%;
+		height: 100%;
+		border-color: #2563eb;
+		opacity: 0.3;
+	}
+
+	.layer-2 {
+		width: 80%;
+		height: 80%;
+		top: 10%;
+		left: 10%;
+		border-color: #059669;
+		opacity: 0.5;
+		animation-direction: reverse;
+		animation-duration: 15s;
+	}
+
+	.layer-3 {
+		width: 60%;
+		height: 60%;
+		top: 20%;
+		left: 20%;
+		border-color: #dc2626;
+		opacity: 0.4;
+		animation-duration: 25s;
+	}
+
+	.shield-icon {
+		font-size: 4rem;
+		z-index: 1;
+		filter: drop-shadow(0 4px 12px rgba(37, 99, 235, 0.3));
+	}
+
+	@keyframes rotate {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(360deg); }
+	}
+
+	.features {
+		background: white;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+	}
+
+	.feature-card {
+		text-align: center;
+		padding: 40px 24px;
+		border-radius: 16px;
+		border: 1px solid #f1f5f9;
+		transition: all 0.3s ease;
+		background: white;
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+		border-color: #e2e8f0;
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 24px;
+	}
+
+	.feature-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 16px;
+		color: #1e293b;
+	}
+
+	.feature-card p {
+		color: #64748b;
+		line-height: 1.6;
+	}
+
+	.stats {
+		background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+		color: white;
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 48px;
+	}
+
+	.stat-item {
+		text-align: center;
+	}
+
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 800;
+		background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		margin-bottom: 8px;
+	}
+
+	.stat-label {
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+
+	.stat-description {
+		color: #94a3b8;
+		font-size: 0.9rem;
+	}
+
+	.quick-links {
+		background: #f8fafc;
+	}
+
+	.links-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+	}
+
+	.link-card {
+		background: white;
+		padding: 32px;
+		border-radius: 16px;
+		text-align: center;
+		transition: all 0.3s ease;
+		border: 1px solid #f1f5f9;
+		display: block;
+	}
+
+	.link-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.link-icon {
+		font-size: 3rem;
+		margin-bottom: 24px;
+	}
+
+	.link-card h3 {
+		font-size: 1.5rem;
+		margin-bottom: 16px;
+		color: #1e293b;
+	}
+
+	.link-card p {
+		color: #64748b;
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 80px 0;
+		}
+		
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 48px;
+			text-align: center;
+		}
+		
+		.hero-title {
+			font-size: 2.5rem;
+		}
+		
+		.cyber-shield {
+			width: 250px;
+			height: 250px;
+		}
+		
+		.shield-icon {
+			font-size: 3rem;
+		}
+		
+		.stats-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 32px;
+		}
+		
+		.stat-number {
+			font-size: 2.5rem;
+		}
+	}
+</style>
+</Layout>

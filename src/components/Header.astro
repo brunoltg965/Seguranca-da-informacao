@@ -1,0 +1,174 @@
+---
+---
+
+<header class="header">
+	<nav class="nav">
+		<div class="container">
+			<div class="nav-content">
+				<a href="/" class="logo">
+					<div class="logo-icon">🛡️</div>
+					<span>CyberSec Pro</span>
+				</a>
+				
+				<div class="nav-links" id="navLinks">
+					<a href="/" class="nav-link">Início</a>
+					<a href="/sobre" class="nav-link">Sobre a Profissão</a>
+					<a href="/dicas" class="nav-link">Dicas & Tendências</a>
+					<a href="/contatos" class="nav-link">Contatos</a>
+					<a href="/ods" class="nav-link">ODS</a>
+				</div>
+				
+				<button class="mobile-toggle" id="mobileToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<style>
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.95);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid #f1f5f9;
+		z-index: 1000;
+	}
+
+	.nav {
+		padding: 16px 0;
+	}
+
+	.nav-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: #2563eb;
+	}
+
+	.logo-icon {
+		font-size: 2rem;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.nav-link {
+		color: #4b5563;
+		font-weight: 500;
+		position: relative;
+		transition: color 0.3s ease;
+	}
+
+	.nav-link:hover {
+		color: #2563eb;
+	}
+
+	.nav-link::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+		transition: width 0.3s ease;
+	}
+
+	.nav-link:hover::after {
+		width: 100%;
+	}
+
+	.mobile-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 4px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 8px;
+	}
+
+	.mobile-toggle span {
+		width: 24px;
+		height: 2px;
+		background: #2563eb;
+		transition: all 0.3s ease;
+	}
+
+	@media (max-width: 768px) {
+		.nav-links {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			background: white;
+			flex-direction: column;
+			padding: 24px;
+			box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+			transform: translateY(-100%);
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+		}
+
+		.nav-links.active {
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.mobile-toggle {
+			display: flex;
+		}
+
+		.mobile-toggle.active span:nth-child(1) {
+			transform: rotate(45deg) translate(5px, 5px);
+		}
+
+		.mobile-toggle.active span:nth-child(2) {
+			opacity: 0;
+		}
+
+		.mobile-toggle.active span:nth-child(3) {
+			transform: rotate(-45deg) translate(7px, -6px);
+		}
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const mobileToggle = document.getElementById('mobileToggle');
+		const navLinks = document.getElementById('navLinks');
+
+		mobileToggle?.addEventListener('click', () => {
+			mobileToggle.classList.toggle('active');
+			navLinks?.classList.toggle('active');
+		});
+
+		// Close mobile menu when clicking on a link
+		const links = navLinks?.querySelectorAll('.nav-link');
+		links?.forEach(link => {
+			link.addEventListener('click', () => {
+				mobileToggle?.classList.remove('active');
+				navLinks?.classList.remove('active');
+			});
+		});
+	});
+</script>

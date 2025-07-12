@@ -1,0 +1,706 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contatos - Nossa Equipe">
+	<Header />
+	
+	<main style="margin-top: 80px;">
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<h1 class="hero-title">Nossa Equipe</h1>
+				<p class="hero-subtitle">
+					Conheça os profissionais por trás deste projeto e conecte-se conosco 
+					através de nossas redes profissionais.
+				</p>
+			</div>
+		</section>
+
+		<!-- Team Section -->
+		<section class="section team">
+			<div class="container">
+				<h2 class="section-title">Perfis Profissionais</h2>
+				<p class="section-subtitle">
+					Estudantes apaixonados por tecnologia e segurança da informação
+				</p>
+				
+				<div class="team-grid">
+					<div class="member-card">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg" alt="Ana Silva" />
+							<div class="member-status">🟢</div>
+						</div>
+						<div class="member-info">
+							<h3>Ana Silva</h3>
+							<p class="member-role">Especialista em Ethical Hacking</p>
+							<p class="member-description">
+								Focada em testes de penetração e análise de vulnerabilidades. 
+								Apaixonada por CTFs e competições de segurança.
+							</p>
+							<div class="member-skills">
+								<span class="skill-tag">Penetration Testing</span>
+								<span class="skill-tag">Linux</span>
+								<span class="skill-tag">Python</span>
+								<span class="skill-tag">Burp Suite</span>
+							</div>
+							<div class="member-social">
+								<a href="https://linkedin.com/in/ana-silva-cybersec" target="_blank" class="social-link linkedin">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+									</svg>
+									LinkedIn
+								</a>
+								<a href="https://github.com/ana-silva-cyber" target="_blank" class="social-link github">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+									GitHub
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="member-card">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/3831849/pexels-photo-3831849.jpeg" alt="Carlos Santos" />
+							<div class="member-status">🟢</div>
+						</div>
+						<div class="member-info">
+							<h3>Carlos Santos</h3>
+							<p class="member-role">Arquiteto de Segurança</p>
+							<p class="member-description">
+								Especializado em design de infraestruturas seguras e implementação 
+								de soluções Zero Trust para organizações.
+							</p>
+							<div class="member-skills">
+								<span class="skill-tag">Cloud Security</span>
+								<span class="skill-tag">AWS</span>
+								<span class="skill-tag">Kubernetes</span>
+								<span class="skill-tag">Terraform</span>
+							</div>
+							<div class="member-social">
+								<a href="https://linkedin.com/in/carlos-santos-sec" target="_blank" class="social-link linkedin">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+									</svg>
+									LinkedIn
+								</a>
+								<a href="https://github.com/carlos-santos-arch" target="_blank" class="social-link github">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+									GitHub
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="member-card">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/3831639/pexels-photo-3831639.jpeg" alt="Marina Costa" />
+							<div class="member-status">🟢</div>
+						</div>
+						<div class="member-info">
+							<h3>Marina Costa</h3>
+							<p class="member-role">Analista Forense Digital</p>
+							<p class="member-description">
+								Especialista em investigação de incidentes cibernéticos e coleta 
+								de evidências digitais para fins investigativos.
+							</p>
+							<div class="member-skills">
+								<span class="skill-tag">Digital Forensics</span>
+								<span class="skill-tag">EnCase</span>
+								<span class="skill-tag">Wireshark</span>
+								<span class="skill-tag">Malware Analysis</span>
+							</div>
+							<div class="member-social">
+								<a href="https://linkedin.com/in/marina-costa-forensics" target="_blank" class="social-link linkedin">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+									</svg>
+									LinkedIn
+								</a>
+								<a href="https://github.com/marina-costa-forensics" target="_blank" class="social-link github">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+									GitHub
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="member-card">
+						<div class="member-avatar">
+							<img src="https://images.pexels.com/photos/3831822/pexels-photo-3831822.jpeg" alt="Rafael Oliveira" />
+							<div class="member-status">🟢</div>
+						</div>
+						<div class="member-info">
+							<h3>Rafael Oliveira</h3>
+							<p class="member-role">SOC Analyst</p>
+							<p class="member-description">
+								Especializado em monitoramento de segurança 24/7 e resposta a incidentes. 
+								Experiência em SIEM e threat hunting.
+							</p>
+							<div class="member-skills">
+								<span class="skill-tag">SIEM</span>
+								<span class="skill-tag">Splunk</span>
+								<span class="skill-tag">Incident Response</span>
+								<span class="skill-tag">Threat Hunting</span>
+							</div>
+							<div class="member-social">
+								<a href="https://linkedin.com/in/rafael-oliveira-soc" target="_blank" class="social-link linkedin">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+									</svg>
+									LinkedIn
+								</a>
+								<a href="https://github.com/rafael-oliveira-soc" target="_blank" class="social-link github">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+									</svg>
+									GitHub
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Info Section -->
+		<section class="section contact-info">
+			<div class="container">
+				<div class="contact-grid">
+					<div class="contact-card">
+						<div class="contact-icon">📧</div>
+						<h3>Entre em Contato</h3>
+						<p>Interessado em discutir oportunidades ou compartilhar experiências? Entre em contato conosco!</p>
+						<a href="mailto:equipe@cybersec-pro.com" class="btn btn-primary">
+							Enviar Email
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="m9 18 6-6-6-6"/>
+							</svg>
+						</a>
+					</div>
+					
+					<div class="contact-card">
+						<div class="contact-icon">💼</div>
+						<h3>Colaborações</h3>
+						<p>Abertos para colaborações em projetos, pesquisas e iniciativas relacionadas à segurança da informação.</p>
+						<a href="#" class="btn btn-secondary">
+							Propor Colaboração
+						</a>
+					</div>
+					
+					<div class="contact-card">
+						<div class="contact-icon">🎓</div>
+						<h3>Mentoria</h3>
+						<p>Buscamos mentores experientes e também oferecemos orientação para iniciantes na área de cybersecurity.</p>
+						<a href="#" class="btn btn-secondary">
+							Saiba Mais
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Networks Section -->
+		<section class="section social-networks">
+			<div class="container">
+				<h2 class="section-title">Nossas Redes</h2>
+				<p class="section-subtitle">
+					Siga-nos e mantenha-se conectado com conteúdo sobre segurança da informação
+				</p>
+				
+				<div class="social-grid">
+					<a href="https://linkedin.com/company/cybersec-pro-team" target="_blank" class="social-card linkedin-card">
+						<div class="social-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+							</svg>
+						</div>
+						<div class="social-info">
+							<h3>LinkedIn</h3>
+							<p>Conecte-se conosco para networking profissional e atualizações de carreira</p>
+							<span class="social-handle">@cybersec-pro-team</span>
+						</div>
+					</a>
+					
+					<a href="https://github.com/cybersec-pro-team" target="_blank" class="social-card github-card">
+						<div class="social-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+							</svg>
+						</div>
+						<div class="social-info">
+							<h3>GitHub</h3>
+							<p>Explore nossos projetos open source e ferramentas de segurança</p>
+							<span class="social-handle">@cybersec-pro-team</span>
+						</div>
+					</a>
+					
+					<a href="https://twitter.com/cybersecproteam" target="_blank" class="social-card twitter-card">
+						<div class="social-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+							</svg>
+						</div>
+						<div class="social-info">
+							<h3>Twitter</h3>
+							<p>Acompanhe discussões sobre segurança e tendências do setor</p>
+							<span class="social-handle">@cybersecproteam</span>
+						</div>
+					</a>
+					
+					<a href="https://medium.com/@cybersecproteam" target="_blank" class="social-card medium-card">
+						<div class="social-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+							</svg>
+						</div>
+						<div class="social-info">
+							<h3>Medium</h3>
+							<p>Leia nossos artigos técnicos e insights sobre cybersecurity</p>
+							<span class="social-handle">@cybersecproteam</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Professional Tips Section -->
+		<section class="section professional-tips">
+			<div class="container">
+				<h2 class="section-title">Dicas para Perfis Profissionais</h2>
+				<div class="tips-grid">
+					<div class="tip-card">
+						<div class="tip-header">
+							<div class="tip-icon">💼</div>
+							<h3>LinkedIn Profissional</h3>
+						</div>
+						<ul class="tip-list">
+							<li>Foto profissional de alta qualidade</li>
+							<li>Headline clara com palavras-chave</li>
+							<li>Resumo destacando experiências relevantes</li>
+							<li>Certificações e cursos atualizados</li>
+							<li>Recomendações de colegas e mentores</li>
+							<li>Publicações sobre temas da área</li>
+						</ul>
+					</div>
+					
+					<div class="tip-card">
+						<div class="tip-header">
+							<div class="tip-icon">⚡</div>
+							<h3>GitHub Impactante</h3>
+						</div>
+						<ul class="tip-list">
+							<li>README.md detalhado em todos os projetos</li>
+							<li>Código limpo e bem documentado</li>
+							<li>Projetos demonstrando diferentes habilidades</li>
+							<li>Contribuições para projetos open source</li>
+							<li>Scripts e ferramentas úteis para a comunidade</li>
+							<li>Commits regulares mostrando consistência</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+		color: white;
+		padding: 120px 0 80px;
+		text-align: center;
+	}
+
+	.hero-title {
+		font-size: 3rem;
+		font-weight: 800;
+		margin-bottom: 24px;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: #bfdbfe;
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.team {
+		background: white;
+	}
+
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 32px;
+	}
+
+	.member-card {
+		background: white;
+		border-radius: 16px;
+		padding: 32px;
+		border: 1px solid #e2e8f0;
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.member-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+	}
+
+	.member-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+	}
+
+	.member-avatar {
+		position: relative;
+		width: 120px;
+		height: 120px;
+		margin: 0 auto 24px;
+	}
+
+	.member-avatar img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 4px solid #f1f5f9;
+	}
+
+	.member-status {
+		position: absolute;
+		bottom: 8px;
+		right: 8px;
+		width: 24px;
+		height: 24px;
+		background: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.8rem;
+		border: 2px solid white;
+	}
+
+	.member-info {
+		text-align: center;
+	}
+
+	.member-info h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 8px;
+		color: #1e293b;
+	}
+
+	.member-role {
+		color: #2563eb;
+		font-weight: 500;
+		margin-bottom: 16px;
+		font-size: 1.1rem;
+	}
+
+	.member-description {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 24px;
+	}
+
+	.member-skills {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: center;
+		margin-bottom: 24px;
+	}
+
+	.skill-tag {
+		background: #f1f5f9;
+		color: #475569;
+		padding: 6px 12px;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+
+	.member-social {
+		display: flex;
+		gap: 12px;
+		justify-content: center;
+	}
+
+	.social-link {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 10px 16px;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 0.9rem;
+		transition: all 0.3s ease;
+		border: 1px solid;
+	}
+
+	.social-link.linkedin {
+		color: #0077b5;
+		border-color: #0077b5;
+		background: rgba(0, 119, 181, 0.1);
+	}
+
+	.social-link.linkedin:hover {
+		background: #0077b5;
+		color: white;
+	}
+
+	.social-link.github {
+		color: #333;
+		border-color: #333;
+		background: rgba(51, 51, 51, 0.1);
+	}
+
+	.social-link.github:hover {
+		background: #333;
+		color: white;
+	}
+
+	.contact-info {
+		background: #f8fafc;
+	}
+
+	.contact-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 32px;
+	}
+
+	.contact-card {
+		background: white;
+		padding: 40px 32px;
+		border-radius: 16px;
+		text-align: center;
+		border: 1px solid #e2e8f0;
+		transition: all 0.3s ease;
+	}
+
+	.contact-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	}
+
+	.contact-icon {
+		font-size: 3rem;
+		margin-bottom: 24px;
+	}
+
+	.contact-card h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 16px;
+		color: #1e293b;
+	}
+
+	.contact-card p {
+		color: #4b5563;
+		line-height: 1.6;
+		margin-bottom: 24px;
+	}
+
+	.social-networks {
+		background: white;
+	}
+
+	.social-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 24px;
+	}
+
+	.social-card {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		padding: 24px;
+		border-radius: 16px;
+		transition: all 0.3s ease;
+		border: 1px solid;
+	}
+
+	.social-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.linkedin-card {
+		border-color: #0077b5;
+		background: linear-gradient(135deg, rgba(0, 119, 181, 0.1) 0%, rgba(0, 119, 181, 0.05) 100%);
+		color: #0077b5;
+	}
+
+	.linkedin-card:hover {
+		background: #0077b5;
+		color: white;
+	}
+
+	.github-card {
+		border-color: #333;
+		background: linear-gradient(135deg, rgba(51, 51, 51, 0.1) 0%, rgba(51, 51, 51, 0.05) 100%);
+		color: #333;
+	}
+
+	.github-card:hover {
+		background: #333;
+		color: white;
+	}
+
+	.twitter-card {
+		border-color: #1da1f2;
+		background: linear-gradient(135deg, rgba(29, 161, 242, 0.1) 0%, rgba(29, 161, 242, 0.05) 100%);
+		color: #1da1f2;
+	}
+
+	.twitter-card:hover {
+		background: #1da1f2;
+		color: white;
+	}
+
+	.medium-card {
+		border-color: #000;
+		background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.05) 100%);
+		color: #000;
+	}
+
+	.medium-card:hover {
+		background: #000;
+		color: white;
+	}
+
+	.social-icon {
+		flex-shrink: 0;
+	}
+
+	.social-info h3 {
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+
+	.social-info p {
+		line-height: 1.5;
+		margin-bottom: 8px;
+		opacity: 0.8;
+	}
+
+	.social-handle {
+		font-weight: 500;
+		font-size: 0.9rem;
+		opacity: 0.7;
+	}
+
+	.professional-tips {
+		background: #f8fafc;
+	}
+
+	.tips-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 32px;
+	}
+
+	.tip-card {
+		background: white;
+		border-radius: 16px;
+		padding: 32px;
+		border: 1px solid #e2e8f0;
+		transition: all 0.3s ease;
+	}
+
+	.tip-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	}
+
+	.tip-header {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 24px;
+	}
+
+	.tip-icon {
+		font-size: 2.5rem;
+	}
+
+	.tip-header h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: #1e293b;
+	}
+
+	.tip-list {
+		list-style: none;
+	}
+
+	.tip-list li {
+		padding: 12px 0;
+		color: #4b5563;
+		position: relative;
+		padding-left: 24px;
+		line-height: 1.5;
+		border-bottom: 1px solid #f1f5f9;
+	}
+
+	.tip-list li:last-child {
+		border-bottom: none;
+	}
+
+	.tip-list li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #059669;
+		font-weight: 600;
+	}
+
+	@media (max-width: 768px) {
+		.hero-title {
+			font-size: 2.5rem;
+		}
+		
+		.team-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.social-card {
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		.tips-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.contact-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+</Layout>
